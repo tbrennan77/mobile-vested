@@ -1,1 +1,10 @@
-.gold{color:#bf9d6e}.background-gradient{background:#0d2e50;background:-webkit-gradient(linear,left top,left bottom,from(#0d2e50),to(#082245));background:linear-gradient(180deg,#0d2e50 0,#082245);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2e50",endColorstr="#082245",GradientType=0)}
+/*
+Theme Name:			MobileVestEd Mobile Homes Theme
+Theme URI:          https://mobilevested.com
+Description:        Built on <a href="https://roots.io/sage/" target="_blank">WP Jumpstart</a>, customized for MobileVestEd.com
+Version:            8.5.0
+Author:             Tim Brennan (TRB), Development Director for Go Media
+Author URI:         https://trygomedia.com
+Template: 			mobile
+*/
+@import url("https://use.typekit.net/iph6fdo.css");.gold{color:#bf9d6e}.background-gradient{background:#0d2e50;background:-webkit-gradient(linear,left top,left bottom,from(#0d2e50),to(#082245));background:linear-gradient(180deg,#0d2e50 0,#082245);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2e50",endColorstr="#082245",GradientType=0)}
