@@ -5,6 +5,7 @@ bower_components
 node_modules
 npm-debug.log
 vendor
+package-lock.json
 
 # OS generated files #
 ######################
