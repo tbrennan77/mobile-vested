@@ -2,153 +2,161 @@
 'use strict';
 
 const
-
-  // source and build folders
+// source and build folders
   dir = {
     src         : 'src/',
     build       : '/Users/tbrennan/websites/mobilevested/wp-content/themes/mobile-homes/'
-  },
-
-  // Gulp and plugins
-  gulp          = require('gulp'),
-  gutil         = require('gulp-util'),
-  newer         = require('gulp-newer'),
-  imagemin      = require('gulp-imagemin'),
-  sass          = require('gulp-sass'),
-  postcss       = require('gulp-postcss'),
-  deporder      = require('gulp-deporder'),
-  concat        = require('gulp-concat'),
-  stripdebug    = require('gulp-strip-debug'),
-  uglify        = require('gulp-uglify')
+  }
 ;
 
-// Browser-sync
-var browsersync = false;
+// Load all the modules from package.json
+var gulp        = require('gulp'),
+  plumber       = require('gulp-plumber'),
+  autoprefixer  = require('gulp-autoprefixer'),
+  watch         = require('gulp-watch'),
+  jshint        = require('gulp-jshint'),
+  stylish       = require('jshint-stylish'),
+  uglify        = require('gulp-uglify'),
+  rename        = require('gulp-rename'),
+  notify        = require('gulp-notify'),
+  include       = require('gulp-include'),
+  sass          = require('gulp-sass'),
+  browserSync   = require('browser-sync').create(),
+  critical      = require('critical'),
+  zip           = require('gulp-zip');
+
+var config = {
+     nodeDir: './node_modules' 
+}
 
 
-// PHP settings
-const php = {
-  src           : dir.src + 'template/**/*.php',
-  build         : dir.build
-};
 
-// copy PHP files
-gulp.task('php', () => {
-  return gulp.src(php.src)
-    .pipe(newer(php.build))
-    .pipe(gulp.dest(php.build));
+// Default error handler
+var onError = function( err ) {
+  console.log( 'An error occured:', err.message );
+  this.emit('end');
+}
+
+// JS to watch
+var jsFiles = [
+  dir.src + 'src/js/**/*.js'
+];
+ 
+// Sass files to watch
+var cssFiles = [
+  dir.src + 'scss/**/*.scss'
+];
+
+// automatically reloads the page when files changed
+var browserSyncWatchFiles = [
+    './*.min.css',
+    './js/**/*.min.js',
+    './**/*.php'
+];
+
+// see: https://www.browsersync.io/docs/options/
+var browserSyncOptions = {
+    watchTask: true,
+    proxy: "http://localhost:8888/"
+}
+
+// Zip files up
+gulp.task('zip', function () {
+ return gulp.src([
+   '*',
+   dir.src + '/template/*',
+   dir.src + '/images/**/*',
+   dir.src + '/js/**/*',
+   dir.src + '/scss/**/*',
+  ], {base: "."})
+  .pipe(zip('strappress.zip'))
+  .pipe(gulp.dest('.'));
+});
+ 
+// Jshint outputs any kind of javascript problems you might have
+// Only checks javascript files inside /src directory
+gulp.task( 'jshint', function() {
+  return gulp.src( dir.src + 'js/*.js' )
+    .pipe( jshint() )
+    .pipe( jshint.reporter( stylish ) )
+    .pipe( jshint.reporter( 'fail' ) );
+})
+ 
+ 
+// Concatenates all files that it finds in the manifest
+// and creates two versions: normal and minified.
+// It's dependent on the jshint task to succeed.
+gulp.task( 'scripts', gulp.series('jshint'), function() {
+  return gulp.src( './js/manifest.js' )
+    .pipe( include() )
+    .pipe( rename( { basename: 'scripts' } ) )
+    .pipe( gulp.dest( './js/dist' ) )
+    // Normal done, time to create the minified javascript (scripts.min.js)
+    // remove the following 3 lines if you don't want it
+    .pipe( uglify() )
+    .pipe( rename( { suffix: '.min' } ) )
+    .pipe( gulp.dest( './js/dist' ) )
+    .pipe(browserSync.reload({stream: true}))
+    .pipe( notify({ message: 'scripts task complete' }));
+});
+
+// Sass - Creates a regular and minified .css file in root 
+gulp.task('sass', function() {
+  return gulp.src(dir.src + '/scss/style.scss')
+    .pipe(plumber())
+    .pipe(sass({
+        errLogToConsole: true,
+        precision: 8,
+        noCache: true,
+        imagePath: 'src/images'
+        //includePaths: []
+      }).on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('.'))
+    .pipe(sass({ outputStyle:'uncompressed'}).on('error', sass.logError))
+    //.pipe(rename( { suffix: '.min' } ) )
+    .pipe(gulp.dest('.'))
+    .pipe(browserSync.reload({stream: true}))
+    .pipe(notify({ title: 'Sass', message: 'sass task complete'  }));
+});
+
+// Generate & Inline Critical-path CSS
+gulp.task('critical', function (cb) {
+    critical.generate({
+        base: './',
+        src: 'http://localhost:8888/',
+        dest: 'css/home.min.css',
+        ignore: ['@font-face'],
+        dimensions: [{
+          width: 320,
+          height: 480
+        },{
+          width: 768,
+          height: 1024
+        },{
+          width: 1280,
+          height: 960
+        }],
+        minify: true
+    });
 });
 
 
-// image settings
-const images = {
-  src         : dir.src + 'images/**/*',
-  build       : dir.build + 'images/'
-};
-
-// image processing
-gulp.task('images', () => {
-  return gulp.src(images.src)
-    .pipe(newer(images.build))
-    .pipe(imagemin())
-    .pipe(gulp.dest(images.build));
+// Starts browser-sync task for starting the server.
+gulp.task('browser-sync', function() {
+    browserSync.init(browserSyncWatchFiles, browserSyncOptions);
 });
-
-// CSS settings
-var css = {
-  src         : dir.src + 'scss/style.scss',
-  watch       : dir.src + 'scss/**/*',
-  build       : dir.build,
-  sassOpts: {
-    outputStyle     : 'nested',
-    imagePath       : images.build,
-    precision       : 3,
-    errLogToConsole : true
-  },
-  processors: [
-    require('postcss-assets')({
-      loadPaths: ['images/'],
-      basePath: dir.build,
-      baseUrl: '/wp-content/themes/mobile-homes/'
-    }),
-    require('autoprefixer'),
-    require('css-mqpacker'),
-    require('cssnano')
-  ]
-};
-
-// CSS processing
-gulp.task('css', gulp.series('images', () => {
-  return gulp.src(css.src)
-    .pipe(sass(css.sassOpts))
-    .pipe(postcss(css.processors))
-    .pipe(gulp.dest(css.build))
-    .pipe(browsersync ? browsersync.reload({ stream: true }) : gutil.noop());
-}));
-
-// JavaScript settings
-const js = {
-  src         : dir.src + 'js/**/*',
-  build       : dir.build + 'js/',
-  filename    : 'scripts.js'
-};
-
-// JavaScript processing
-gulp.task('js', () => {
-
-  return gulp.src(js.src)
-    .pipe(deporder())
-    .pipe(concat(js.filename))
-    .pipe(stripdebug())
-    .pipe(uglify())
-    .pipe(gulp.dest(js.build))
-    .pipe(browsersync ? browsersync.reload({ stream: true }) : gutil.noop());
-
-});
-
-// run all tasks
-gulp.task('build', gulp.series('php', 'css', 'js'));
-
-
-// Browsersync options
-const syncOpts = {
-  proxy       : 'localhost:8888',
-  files       : dir.build + '**/*',
-  open        : false,
-  notify      : false,
-  ghostMode   : false,
-  ui: {
-    port: 8001
-  }
-};
-
-
-// browser-sync
-gulp.task('browsersync', () => {
-  if (browsersync === false) {
-    browsersync = require('browser-sync').create();
-    browsersync.init(syncOpts);
-  }
-});
-
-
-// watch for file changes
-gulp.task('watch', gulp.series('browsersync', () => {
-
-  // page changes
-  gulp.watch(php.src, ['php'], browsersync ? browsersync.reload : {});
-
-  // image changes
-  gulp.watch(images.src, ['images']);
-
-    // CSS changes
-  gulp.watch(css.watch, ['css']);
-
-  // JavaScript main changes
-  gulp.watch(js.src, ['js']);
-
-}));
-
-
-// default task
-gulp.task('default', gulp.series('build', 'watch'));
+ 
+ 
+// Start the livereload server and watch files for change
+gulp.task( 'watch', function() {
+ 
+  // don't listen to whole js folder, it'll create an infinite loop
+  //gulp.watch( jsFiles, gulp.parallel('scripts') )
+ 
+  gulp.watch( cssFiles, gulp.parallel('sass') );
+   
+} );
+ 
+ 
+gulp.task( 'default', gulp.parallel('watch', 'browser-sync'));
