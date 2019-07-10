@@ -1,13 +1,70 @@
 .home-hero-section {
 	h1 {
-		
+		.gold {
+			display: block;
+		}
 	}
 }
 
 .home-strategies-section {
+	.left-column {
+		background-color: $brand-lt-gold;
 
+	    h2 {
+	    	font-weight: 300;
+			font-style: normal;
+			font-size: 2.5em;
+			color: $brand-blue;
+	    }
+
+	    p {
+	    	color: $brand-blue;
+	    	font-family: $font-body;
+	    	font-size: 1.25em;
+	    }
+	}
+
+	.left-column::before {
+		content: '\a0'; /* \a0 is hex code for a non-breaking space */
+	    z-index: -1;
+	    background-color: $brand-lt-gold;
+	    position: absolute;
+	    top: 0;
+	    width: 50vw;
+	    height: 100%;
+	    left: -50vw;
+	}
+
+	.right-column {
+
+		h1 {
+			font-weight: 300;
+			font-style: normal !important;
+			font-size: 2.45em !important;
+			color: $brand-blue;
+		}
+
+		p {
+			color: $brand-blue;
+	    	font-family: $font-body;
+	    	font-size: 1.25em;
+	    	margin: 40px 0;
+		}
+	}
 }
 
 .home-mailinglist-section {
 
+	h2,
+	.tb-headline h2 {
+		color: $brand-white;
+		font-weight: 300;
+		font-style: normal !important;
+		font-size: 2.5em !important;
+		text-transform: uppercase;
+	}
+
+	.gform_wrapper {
+		margin: 0px;
+	}
 }

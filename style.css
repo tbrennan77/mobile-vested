@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name:			MobileVestEd Mobile Homes Theme
 Theme URI:          https://mobilevested.com
 Description:        Built on <a href="https://roots.io/sage/" target="_blank">WP Jumpstart</a>, customized for MobileVestEd.com
@@ -7,4 +7,197 @@ Author:             Tim Brennan (TRB), Development Director for Go Media
 Author URI:         https://trygomedia.com
 Template: 			mobile
 */
-@import url("https://use.typekit.net/iph6fdo.css");.gold{color:#bf9d6e}.background-gradient{background:#0d2e50;background:-webkit-gradient(linear,left top,left bottom,from(#0d2e50),to(#082245));background:linear-gradient(180deg,#0d2e50 0,#082245);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2e50",endColorstr="#082245",GradientType=0)}
+@import url("https://use.typekit.net/iph6fdo.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+html, body {
+  height: 100%; }
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  color: #0c0c1f;
+  line-height: 18px;
+  font-size: 16px;
+  position: absolute;
+  width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1; }
+
+a:hover {
+  color: #fff4e7; }
+
+.gold {
+  color: #bf9d6e; }
+
+.background-gradient {
+  background: #0d2e50;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d2e50), to(#082245));
+  background: linear-gradient(to bottom, #0d2e50 0%, #082245 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d2e50', endColorstr='#082245',GradientType=0 );
+  /* IE6-9 */ }
+
+.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+  line-height: 1; }
+
+.play-icon {
+  color: #bf9d6e;
+  font-size: 1.2em;
+  text-transform: lowercase;
+  font-weight: bold; }
+
+.play-icon::before {
+  content: '\a0';
+  background-image: url("images/mobilevested_play_icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px 20px;
+  margin-left: 20px; }
+
+/*
+Breakers Slab Thin
+font-family: breakers-slab, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Breakers Slab Light
+font-family: breakers-slab, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Breakers Slab Regular
+font-family: breakers-slab, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Breakers Slab Bold
+font-family: breakers-slab, sans-serif;
+font-weight: 70;
+font-style: normal;
+
+Raleway Light
+font-family: 'Raleway', sans-serif;
+font-weight: 300;
+
+Raleway Normal
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+
+Roboto
+font-family: 'Roboto', sans-serif;
+
+*/
+.site-header.transparent,
+.tb-sticky-header {
+  border: 3px solid #bf9d6e; }
+
+.site-header.transparent .tb-primary-menu > li > .menu-btn,
+.tb-sticky-header .tb-primary-menu > li > .menu-btn {
+  margin: 0 10px;
+  font-family: breakers-slab, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.site-header.transparent .tb-primary-menu > li:last-child:before,
+.tb-sticky-header .tb-primary-menu > li:last-child:before {
+  content: '\a0';
+  /* \a0 is hex code for a non-breaking space */
+  z-index: -1;
+  background-color: #bf9d6e;
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100%;
+  left: 0px; }
+
+.site-header.transparent .login-link .menu-btn,
+.tb-sticky-header .login-link .menu-btn {
+  color: #0c2746; }
+
+.site-header.transparent > .wrap {
+  border-bottom-width: 0px; }
+
+.header-nav .tb-primary-menu > li,
+.tb-sticky-header .tb-primary-menu > li {
+  border-left: 3px solid #bf9d6e;
+  text-align: center;
+  margin: auto; }
+
+.header-nav .tb-primary-menu > li > .menu-btn:before {
+  bottom: 15px;
+  background-color: #bf9d6e;
+  height: 3px; }
+
+.home-hero-section h1 .gold {
+  display: block; }
+
+.home-strategies-section .left-column {
+  background-color: #fff4e7; }
+
+.home-strategies-section .left-column h2 {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.5em;
+  color: #0c2746; }
+
+.home-strategies-section .left-column p {
+  color: #0c2746;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em; }
+
+.home-strategies-section .left-column::before {
+  content: '\a0';
+  /* \a0 is hex code for a non-breaking space */
+  z-index: -1;
+  background-color: #fff4e7;
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100%;
+  left: -50vw; }
+
+.home-strategies-section .right-column h1 {
+  font-weight: 300;
+  font-style: normal !important;
+  font-size: 2.45em !important;
+  color: #0c2746; }
+
+.home-strategies-section .right-column p {
+  color: #0c2746;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  margin: 40px 0; }
+
+.home-mailinglist-section h2,
+.home-mailinglist-section .tb-headline h2 {
+  color: white;
+  font-weight: 300;
+  font-style: normal !important;
+  font-size: 2.5em !important;
+  text-transform: uppercase; }
+
+.home-mailinglist-section .gform_wrapper {
+  margin: 0px; }
+
+.btn {
+  border: 2px solid #bf9d6e !important;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  background: transparent; }
+
+.btn:hover {
+  background: #bf9d6e; }
