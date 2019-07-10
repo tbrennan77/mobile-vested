@@ -1,11 +1,60 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	color: $brand-default;
+	line-height: 18px;
+	font-size: 16px;
+	position: absolute;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 1;
+}
+a {}
+a:hover {
+	color: $brand-lt-gold;
+}
 .gold {
 	color: $brand-gold;
 }
 .background-gradient {
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0d2e50+0,082245+100 */
 	background: #0d2e50; /* Old browsers */
 	background: -moz-linear-gradient(top, #0d2e50 0%, #082245 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #0d2e50 0%,#082245 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #0d2e50 0%,#082245 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d2e50', endColorstr='#082245',GradientType=0 ); /* IE6-9 */
 }
+
+.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+	line-height: 1;
+}
+.play-icon {
+	color: $brand-gold;
+	font-size: 1.2em;
+	text-transform: lowercase;
+	font-weight: bold;
+}
+.play-icon::before {
+	content: '\a0';
+	background-image: url('images/mobilevested_play_icon.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 20px 20px;
+	margin-left: 20px;
+}
+
+
