@@ -1,0 +1,9 @@
+.btn {
+	border: 2px solid $brand-gold !important;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    background: transparent;
+}
+.btn:hover {
+	background: $brand-gold;
+}
