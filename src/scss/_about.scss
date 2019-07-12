@@ -1,0 +1,53 @@
+.about-hero-section {
+	background-color: $brand-blue;
+	padding-top: 300px;
+	padding-bottom: 200px;
+
+	.hero-inside-row {
+		background-color: $brand-gold;
+	}
+}
+.about-mailinglist-section {
+		h2,
+	.tb-headline h2 {
+		color: $brand-white;
+		font-weight: 300;
+		font-style: normal !important;
+		font-size: 2.5em !important;
+		text-transform: uppercase;
+	}
+
+	.gform_wrapper {
+		margin: 0px;
+
+		ul li.gfield {
+			margin-top: 0px;
+		}
+
+		.gfield_label,
+		.top_label .gfield_label {
+			display: none;
+		}
+
+		#input_1_1,
+		.top_label input.large {
+			height: 60px;
+			padding: 5px 20px;
+			border-radius: 5px;
+			font-size: 1.5em;
+			text-align: center;
+			font-family: $font-body;
+		}
+
+		.gform_footer {
+			text-align: center;
+
+			input.button {
+				border: 2px solid $brand-gold !important;
+			    padding: 15px 35px;
+			    font-size: 1.2em;
+			    background: transparent;
+			}
+		}
+	}
+}
