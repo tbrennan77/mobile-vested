@@ -25,7 +25,8 @@ body {
   line-height: 18px;
   font-size: 16px;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  background: white; }
 
 h1,
 h2,
@@ -37,6 +38,10 @@ h5 {
 a:hover {
   color: #fff4e7; }
 
+p {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5; }
+
 .gold {
   color: #bf9d6e; }
 
@@ -44,6 +49,10 @@ a:hover {
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(8%, white), color-stop(8%, rgba(23, 60, 93, 0.95)), to(rgba(11, 35, 64, 0.95)));
   background: linear-gradient(180deg, white 0%, white 8%, rgba(23, 60, 93, 0.95) 8%, rgba(11, 35, 64, 0.95) 100%); }
+
+.gold-gradient {
+  background: -webkit-gradient(linear, left bottom, left top, from(#bf9d6e), to(#fff4e7));
+  background: linear-gradient(0deg, #bf9d6e 0%, #fff4e7 100%); }
 
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
   line-height: 1; }
@@ -162,6 +171,10 @@ footer .footer-stay-up .becausecoffee,
 .home-hero-section h1 .gold {
   display: block; }
 
+.home-hero-section p {
+  font-family: breakers-slab, sans-serif;
+  font-weight: 300; }
+
 .home-strategies-section .left-column {
   background-color: #fff4e7; }
 
@@ -272,8 +285,53 @@ footer .footer-stay-up .becausecoffee,
   padding-top: 300px;
   padding-bottom: 200px; }
 
+.about-hero-section p {
+  font-family: breakers-slab, sans-serif;
+  font-weight: 300; }
+
+.about-hero-section h1 {
+  font-size: 2em;
+  letter-spacing: -.01em; }
+
+.about-hero-section .play-icon {
+  color: #0c2746; }
+
 .about-hero-section .hero-inside-row {
-  background-color: #bf9d6e; }
+  background-color: #bf9d6e !important; }
+
+.about-hero-section .left-column::after {
+  content: '\a0';
+  background-color: #bf9d6e;
+  position: absolute;
+  top: -30px;
+  width: 50vw;
+  height: 297px;
+  left: -48vw; }
+
+.about-hero-section .right-column::before {
+  content: '\a0';
+  background-color: #bf9d6e;
+  position: absolute;
+  top: -30px;
+  width: 50vw;
+  height: 297px;
+  right: -48vw; }
+
+.about-hero-section .right-column p,
+.about-hero-section .right-column h1,
+.about-hero-section .right-column .jumbotron-buttons {
+  text-align: left; }
+
+@media (max-width: 992px) {
+  .about-hero-section .right-column p,
+  .about-hero-section .right-column h1,
+  .about-hero-section .right-column .jumbotron-buttons {
+    text-align: center; } }
+
+.about-hero-section .left-column img {
+  width: 85%;
+  position: absolute;
+  top: -100px; }
 
 .about-mailinglist-section h2,
 .about-mailinglist-section .tb-headline h2 {
@@ -310,6 +368,35 @@ footer .footer-stay-up .becausecoffee,
   padding: 15px 35px;
   font-size: 1.2em;
   background: transparent; }
+
+.about-mid-section {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  background-color: white; }
+
+.meet-glenn h2 {
+  color: #fff4e7; }
+
+.meet-glenn p {
+  color: white;
+  margin-top: 20px; }
+
+.meet-glenn .play-icon {
+  position: relative;
+  top: 20px; }
+
+.meet-max h2 {
+  color: #0c2746; }
+
+.meet-max p {
+  color: #0c2746;
+  margin-top: 20px; }
+
+.meet-max .play-icon {
+  position: relative;
+  top: 20px;
+  color: #0c2746; }
 
 .btn {
   border: 2px solid #bf9d6e !important;
