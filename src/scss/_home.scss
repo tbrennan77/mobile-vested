@@ -66,5 +66,78 @@
 
 	.gform_wrapper {
 		margin: 0px;
+
+		ul li.gfield {
+			margin-top: 0px;
+		}
+
+		.gfield_label,
+		.top_label .gfield_label {
+			display: none;
+		}
+
+		#input_1_1,
+		.top_label input.large {
+			height: 60px;
+			padding: 5px 20px;
+			border-radius: 5px;
+			font-size: 1.5em;
+			text-align: center;
+			font-family: $font-body;
+		}
+
+		.gform_footer {
+			text-align: center;
+
+			input.button {
+				border: 2px solid $brand-gold !important;
+			    padding: 15px 35px;
+			    font-size: 1.2em;
+			    background: transparent;
+			}
+		}
+	}
+}
+
+.why-mobilevested {
+	.right-column {
+		h1,
+		h2 {
+			font-weight: 300;
+			font-style: normal !important;
+			font-size: 2.45em !important;
+			color: $brand-blue;
+			text-transform: uppercase;
+		}
+
+		p {
+			color: $brand-blue;
+	    	font-family: $font-body;
+	    	font-size: 1.25em;
+	    	line-height: 1.15;
+	    	margin: 40px 0;
+		}
+	}
+}
+
+.glenn-and-max {
+
+	h2 {
+		color: $brand-white;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 30px;
+	}
+	.gold {
+		display: block;
+		font-family: $font-header;
+		text-transform: capitalize;
+		font-weight: 500;
+		font-size: 36px;
+	}
+
+	p {
+		font-family: $font-body;
+		color: $brand-white;
 	}
 }
