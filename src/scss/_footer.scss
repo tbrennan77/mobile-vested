@@ -1,0 +1,23 @@
+footer,
+.site-footer {
+	background-color: $brand-gold;
+	
+	li,
+	p {
+		color: $brand-blue;
+	}
+	.footer-stay-up {
+		text-align: left;
+
+		li {
+			display: inline;
+		}
+		.li-i {
+			padding: 7px;
+		}
+		.becausecoffee {
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+	}
+}
