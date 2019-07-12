@@ -15,6 +15,7 @@ body {
 	font-size: 16px;
 	position: absolute;
     width: 100%;
+    background: $brand-white;
 }
 
 h1,
@@ -28,14 +29,23 @@ a {}
 a:hover {
 	color: $brand-lt-gold;
 }
+
+p {
+	font-family: $font-body;
+	line-height: 1.5;
+}
 .gold {
 	color: $brand-gold;
 }
 .background-gradient {
-background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 8%, rgba(23,60,93,0.95) 8%, rgba(11,35,64,0.95) 100%); 
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 8%, rgba(23,60,93,0.95) 8%, rgba(11,35,64,0.95) 100%); 
 }
-
+.gold-gradient {
+	background: linear-gradient(0deg, rgb(191, 157, 110) 0%, rgb(255, 244, 231) 100%);
+	//background: -webkit-linear-gradient( 90deg, rgb(79,79,81) 0%, rgb(255,255,255) 100%);
+	//background: -ms-linear-gradient( 90deg, rgb(79,79,81) 0%, rgb(255,255,255) 100%);
+}
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
 	line-height: 1;
 }

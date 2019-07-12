@@ -3,12 +3,61 @@
 	padding-top: 300px;
 	padding-bottom: 200px;
 
+	p {
+		font-family: $font-header;
+		font-weight: 300;
+	}
+	h1 {
+		font-size: 2em;
+		letter-spacing: -.01em;
+	}
+
+	.play-icon {
+		color: $brand-blue;
+	}
 	.hero-inside-row {
+		background-color: $brand-gold !important;
+	}
+	.left-column::after {
+		content: '\a0';
+		//z-index: -1;
 		background-color: $brand-gold;
+		position: absolute;
+		top: -30px;
+		width: 50vw;
+		height: 297px;
+		left: -48vw;
+	}
+	.right-column::before {
+		content: '\a0';
+		//z-index: -1;
+		background-color: $brand-gold;
+		position: absolute;
+		top: -30px;
+		width: 50vw;
+		height: 297px;
+		right: -48vw;
+	}
+	.right-column p, 
+	.right-column h1,
+	.right-column .jumbotron-buttons {
+		text-align: left;
+
+		@media (max-width: 992px) {
+			text-align: center;
+		}
+	}
+	.left-column {
+
+		img {
+			width: 85%;
+			position: absolute;
+			top: -100px;
+		}
 	}
 }
 .about-mailinglist-section {
-		h2,
+	h2,
 	.tb-headline h2 {
 		color: $brand-white;
 		font-weight: 300;
@@ -49,5 +98,46 @@
 			    background: transparent;
 			}
 		}
+	}
+}
+.about-mid-section {
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+	background-color: $brand-white;
+
+	img {
+		
+	}
+
+	p {
+		
+	}
+}
+.meet-glenn {
+	h2 {
+		color: $brand-lt-gold;
+	}
+	p {
+		color: $brand-white;
+		margin-top: 20px;
+	}
+	.play-icon {
+		position: relative;
+		top: 20px;
+	}
+}
+.meet-max {
+	h2 {
+		color: $brand-blue;
+	}
+	p {
+		color: $brand-blue;
+		margin-top: 20px;
+	}
+	.play-icon {
+		position: relative;
+		top: 20px;
+		color: $brand-blue;
 	}
 }

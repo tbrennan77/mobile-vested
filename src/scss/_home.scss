@@ -4,6 +4,11 @@
 			display: block;
 		}
 	}
+	
+	p {
+		font-family: $font-header;
+		font-weight: 300;
+	}
 }
 
 .home-strategies-section {
