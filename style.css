@@ -41,32 +41,22 @@ a:hover {
   color: #bf9d6e; }
 
 .background-gradient {
-  background: #0d2e50;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0d2e50), to(#082245));
-  background: linear-gradient(to bottom, #0d2e50 0%, #082245 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d2e50', endColorstr='#082245',GradientType=0 );
-  /* IE6-9 */ }
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(8%, white), color-stop(8%, rgba(23, 60, 93, 0.95)), to(rgba(11, 35, 64, 0.95)));
+  background: linear-gradient(180deg, white 0%, white 8%, rgba(23, 60, 93, 0.95) 8%, rgba(11, 35, 64, 0.95) 100%); }
 
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
   line-height: 1; }
 
 .play-icon {
   color: #bf9d6e;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-transform: lowercase;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Raleway", sans-serif; }
 
-.play-icon::before {
-  content: '\a0';
-  background-image: url("images/mobilevested_play_icon.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 20px 20px;
-  margin-left: 20px; }
+.play-icon img {
+  margin-right: 10px; }
 
 /*
 Breakers Slab Thin
@@ -142,6 +132,33 @@ font-family: 'Roboto', sans-serif;
   background-color: #bf9d6e;
   height: 3px; }
 
+footer,
+.site-footer {
+  background-color: #bf9d6e; }
+
+footer li,
+footer p,
+.site-footer li,
+.site-footer p {
+  color: #0c2746; }
+
+footer .footer-stay-up,
+.site-footer .footer-stay-up {
+  text-align: left; }
+
+footer .footer-stay-up li,
+.site-footer .footer-stay-up li {
+  display: inline; }
+
+footer .footer-stay-up .li-i,
+.site-footer .footer-stay-up .li-i {
+  padding: 7px; }
+
+footer .footer-stay-up .becausecoffee,
+.site-footer .footer-stay-up .becausecoffee {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
 .home-hero-section h1 .gold {
   display: block; }
 
@@ -192,6 +209,107 @@ font-family: 'Roboto', sans-serif;
 
 .home-mailinglist-section .gform_wrapper {
   margin: 0px; }
+
+.home-mailinglist-section .gform_wrapper ul li.gfield {
+  margin-top: 0px; }
+
+.home-mailinglist-section .gform_wrapper .gfield_label,
+.home-mailinglist-section .gform_wrapper .top_label .gfield_label {
+  display: none; }
+
+.home-mailinglist-section .gform_wrapper #input_1_1,
+.home-mailinglist-section .gform_wrapper .top_label input.large {
+  height: 60px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
+
+.home-mailinglist-section .gform_wrapper .gform_footer {
+  text-align: center; }
+
+.home-mailinglist-section .gform_wrapper .gform_footer input.button {
+  border: 2px solid #bf9d6e !important;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  background: transparent; }
+
+.why-mobilevested .right-column h1,
+.why-mobilevested .right-column h2 {
+  font-weight: 300;
+  font-style: normal !important;
+  font-size: 2.45em !important;
+  color: #0c2746;
+  text-transform: uppercase; }
+
+.why-mobilevested .right-column p {
+  color: #0c2746;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.15;
+  margin: 40px 0; }
+
+.glenn-and-max h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px; }
+
+.glenn-and-max .gold {
+  display: block;
+  font-family: breakers-slab, sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 36px; }
+
+.glenn-and-max p {
+  font-family: "Raleway", sans-serif;
+  color: white; }
+
+.about-hero-section {
+  background-color: #0c2746;
+  padding-top: 300px;
+  padding-bottom: 200px; }
+
+.about-hero-section .hero-inside-row {
+  background-color: #bf9d6e; }
+
+.about-mailinglist-section h2,
+.about-mailinglist-section .tb-headline h2 {
+  color: white;
+  font-weight: 300;
+  font-style: normal !important;
+  font-size: 2.5em !important;
+  text-transform: uppercase; }
+
+.about-mailinglist-section .gform_wrapper {
+  margin: 0px; }
+
+.about-mailinglist-section .gform_wrapper ul li.gfield {
+  margin-top: 0px; }
+
+.about-mailinglist-section .gform_wrapper .gfield_label,
+.about-mailinglist-section .gform_wrapper .top_label .gfield_label {
+  display: none; }
+
+.about-mailinglist-section .gform_wrapper #input_1_1,
+.about-mailinglist-section .gform_wrapper .top_label input.large {
+  height: 60px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
+
+.about-mailinglist-section .gform_wrapper .gform_footer {
+  text-align: center; }
+
+.about-mailinglist-section .gform_wrapper .gform_footer input.button {
+  border: 2px solid #bf9d6e !important;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  background: transparent; }
 
 .btn {
   border: 2px solid #bf9d6e !important;

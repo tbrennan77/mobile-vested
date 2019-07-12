@@ -69,7 +69,7 @@ gulp.task('zip', function () {
    dir.src + '/js/**/*',
    dir.src + '/scss/**/*',
   ], {base: "."})
-  .pipe(zip('strappress.zip'))
+  .pipe(zip('mobile-homes.zip'))
   .pipe(gulp.dest('.'));
 });
  
