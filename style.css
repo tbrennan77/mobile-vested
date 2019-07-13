@@ -453,3 +453,124 @@ footer .footer-stay-up .becausecoffee,
   font-size: 2em;
   letter-spacing: -.01em;
   line-height: .85 !important; }
+
+.contact-hero-section .gform_wrapper {
+  margin: 0px; }
+
+.contact-hero-section .gform_wrapper .top_label li.gfield {
+  margin-bottom: 0px !important; }
+
+.contact-hero-section .gform_wrapper ul li.gfield {
+  margin-top: 0px !important; }
+
+.contact-hero-section .gform_wrapper textarea.large {
+  max-height: 150px;
+  background-color: #ebebeb;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif; }
+
+.contact-hero-section .gform_wrapper select {
+  margin-bottom: 0px; }
+
+.contact-hero-section .gform_wrapper .top_label > li .gfield_label {
+  display: none; }
+
+.contact-hero-section .top_label input.large,
+.contact-hero-section select {
+  background-color: #ebebeb;
+  height: 60px;
+  padding: 5px 20px !important;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif !important; }
+
+.contact-hero-section input::-webkit-input-placeholder,
+.contact-hero-section textarea::-webkit-input-placeholder {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746; }
+
+.contact-hero-section input::-moz-placeholder,
+.contact-hero-section textarea::-moz-placeholder {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746; }
+
+.contact-hero-section input:-ms-input-placeholder,
+.contact-hero-section textarea:-ms-input-placeholder {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746; }
+
+.contact-hero-section input::-ms-input-placeholder,
+.contact-hero-section textarea::-ms-input-placeholder {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746; }
+
+.contact-hero-section input::placeholder,
+.contact-hero-section textarea::placeholder {
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746; }
+
+.contact-hero-section h3.gform_title {
+  color: #0c2746;
+  font-family: "Raleway", sans-serif !important; }
+
+.contact-hero-section .gform_wrapper form {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 3px 11px 3px rgba(0, 0, 0, 0.51); }
+
+.contact-hero-section .gform_button {
+  border: 3px solid #bf9d6e;
+  background-color: transparent;
+  color: #0c2746;
+  min-width: 150px; }
+
+.contact-faq-section {
+  margin: auto;
+  padding: 5% 20%; }
+
+@media (max-width: 768px) {
+  .contact-faq-section {
+    padding: 30px; } }
+
+.contact-faq-section h2 {
+  font-family: breakers-slab, sans-serif;
+  font-size: 5em;
+  font-weight: 300; }
+
+.contact-faq-section p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5; }
+
+.contact-faq-section .panel-group .panel {
+  padding: 10px;
+  box-shadow: 0 0 10px gray;
+  margin-bottom: 40px;
+  border-radius: 5px; }
+
+.contact-faq-section .panel-title {
+  font-family: "Raleway", sans-serif;
+  color: #0c2746 !important;
+  font-size: 1.2em; }
+
+.contact-faq-section .panel-title a {
+  color: #0c2746 !important; }
+
+.contact-faq-section .panel-heading .panel-title-icon {
+  float: right; }
+
+.contact-faq-section .panel p {
+  color: #bf9d6e; }

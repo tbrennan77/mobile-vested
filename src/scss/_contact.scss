@@ -9,4 +9,121 @@
 		letter-spacing: -.01em;
 		line-height: .85 !important;
 	}
+
+	.gform_wrapper {
+		margin: 0px;
+	}
+
+	.gform_wrapper .top_label li.gfield {
+		margin-bottom: 0px !important;
+	}
+
+	.gform_wrapper ul li.gfield {
+		margin-top: 0px !important;
+	}
+
+	.gform_wrapper textarea.large {
+		max-height: 150px;
+		background-color: #ebebeb;
+		padding: 5px 20px;
+		border-radius: 5px;
+		font-size: 1.2em;
+		font-family: $font-body;
+	}
+
+	.gform_wrapper select {
+		margin-bottom: 0px;
+	}
+
+	.gform_wrapper .top_label > li .gfield_label {
+		display: none;
+	}
+
+	.top_label input.large,
+	select {
+		background-color: #ebebeb;
+		height: 60px;
+		padding: 5px 20px !important;
+		border-radius: 5px;
+		font-size: 1.5em;
+		font-family: $font-body !important;
+	}
+	input::placeholder,
+	textarea::placeholder {
+		font-size: 1.2em;
+		font-family: $font-body;
+		padding: 5px 20px;
+		color: $brand-blue;
+	}
+
+	h3.gform_title {
+		color: $brand-blue;
+		font-family: $font-body !important;
+	}
+
+	.gform_wrapper form {
+		background: rgba(255, 255, 255, .9) !important;
+		border-radius: 10px;
+		padding: 30px;
+		-webkit-box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.51); 
+		box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.51);
+	}
+
+	.gform_button {
+		border: 3px solid $brand-gold;
+		background-color: transparent;
+		color: $brand-blue;
+		min-width: 150px;
+	}
+
+	@media (max-width: 768px) {
+		
+
+	}
+}
+.contact-faq-section {
+	//max-width: 800px;
+	margin: auto;
+	padding: 5% 20%;
+
+	@media (max-width: 768px) {
+		padding: 30px;
+	}
+
+	h2 {
+		font-family: $font-header;
+		font-size: 5em;
+		font-weight: 300;
+	}
+
+	p {
+		font-family: $font-body;
+		font-size: 1.1em;
+		line-height: 1.5;
+	}
+
+	.panel-group .panel {
+		padding: 10px;
+		-webkit-box-shadow: $box-shadow; 
+		box-shadow: $box-shadow;
+		margin-bottom: 40px;
+		border-radius: 5px;
+	}
+	.panel-title {
+		font-family: $font-body;
+		color: $brand-blue !important;
+		font-size: 1.2em;
+
+		a {
+			color: $brand-blue !important;
+		}
+	}
+
+	.panel-heading .panel-title-icon {
+		float: right;
+	}
+
+	.panel p {
+		color: $brand-gold;
+	}
 }
