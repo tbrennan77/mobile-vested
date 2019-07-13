@@ -136,6 +136,36 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: auto; }
 
+.site-header.standard {
+  border: 3px solid #0c2746;
+  background-color: #bf9d6e; }
+
+.site-header.standard .tb-primary-menu > li > .menu-btn {
+  margin: 0 10px;
+  font-family: breakers-slab, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.site-header.standard .tb-primary-menu > li:last-child:before {
+  content: '\a0';
+  /* \a0 is hex code for a non-breaking space */
+  z-index: -1;
+  background-color: #0c2746;
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100%;
+  left: 0px; }
+
+.site-header.standard .login-link .menu-btn {
+  color: white; }
+
+.site-header.standard .header-nav .tb-primary-menu > li,
+.site-header.standard .tb-sticky-header .tb-primary-menu > li {
+  border-left: 3px solid #0c2746;
+  text-align: center;
+  margin: auto; }
+
 .header-nav .tb-primary-menu > li > .menu-btn:before {
   bottom: 15px;
   background-color: #bf9d6e;
@@ -167,6 +197,21 @@ footer .footer-stay-up .becausecoffee,
 .site-footer .footer-stay-up .becausecoffee {
   font-size: 1.2rem;
   font-weight: bold; }
+
+.btn {
+  border: 3px solid #bf9d6e !important;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  background: transparent; }
+
+.btn:hover {
+  background: #bf9d6e; }
+
+.btn-primary {
+  border: 3px solid #0c2746 !important; }
+
+.btn-primary:hover {
+  background: #0c2746; }
 
 .home-hero-section h1 .gold {
   display: block; }
@@ -291,7 +336,8 @@ footer .footer-stay-up .becausecoffee,
 
 .about-hero-section h1 {
   font-size: 2em;
-  letter-spacing: -.01em; }
+  letter-spacing: -.01em;
+  line-height: .9; }
 
 .about-hero-section .play-icon {
   color: #0c2746; }
@@ -398,11 +444,12 @@ footer .footer-stay-up .becausecoffee,
   top: 20px;
   color: #0c2746; }
 
-.btn {
-  border: 2px solid #bf9d6e !important;
-  padding: 15px 35px;
-  font-size: 1.2em;
-  background: transparent; }
+.contact-hero-section p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.1em; }
 
-.btn:hover {
-  background: #bf9d6e; }
+.contact-hero-section h1 {
+  font-size: 2em;
+  letter-spacing: -.01em;
+  line-height: .85 !important; }
