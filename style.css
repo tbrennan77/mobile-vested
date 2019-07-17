@@ -626,12 +626,14 @@ footer .footer-right-menu li,
   margin-top: 0px !important; }
 
 .contact-hero-section .gform_wrapper textarea.large {
-  max-height: 150px;
+  max-height: 120px;
   background-color: #ebebeb;
   padding: 5px 20px;
   border-radius: 5px;
   font-size: 1.2em;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  color: #0c2746;
+  font-weight: bolder; }
 
 .contact-hero-section .gform_wrapper select {
   margin-bottom: 0px; }
@@ -642,46 +644,53 @@ footer .footer-right-menu li,
 .contact-hero-section .top_label input.large,
 .contact-hero-section select {
   background-color: #ebebeb;
-  height: 60px;
+  height: 50px;
   padding: 5px 20px !important;
   border-radius: 5px;
-  font-size: 1.5em;
-  font-family: "Raleway", sans-serif !important; }
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif !important;
+  color: #0c2746;
+  font-weight: bolder; }
 
 .contact-hero-section input::-webkit-input-placeholder,
 .contact-hero-section textarea::-webkit-input-placeholder {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Raleway", sans-serif;
   padding: 5px 20px;
-  color: #0c2746; }
+  color: #0c2746;
+  font-weight: normal; }
 
 .contact-hero-section input::-moz-placeholder,
 .contact-hero-section textarea::-moz-placeholder {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Raleway", sans-serif;
   padding: 5px 20px;
-  color: #0c2746; }
+  color: #0c2746;
+  font-weight: normal; }
 
 .contact-hero-section input:-ms-input-placeholder,
 .contact-hero-section textarea:-ms-input-placeholder {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Raleway", sans-serif;
   padding: 5px 20px;
-  color: #0c2746; }
+  color: #0c2746;
+  font-weight: normal; }
 
 .contact-hero-section input::-ms-input-placeholder,
 .contact-hero-section textarea::-ms-input-placeholder {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Raleway", sans-serif;
   padding: 5px 20px;
-  color: #0c2746; }
+  color: #0c2746;
+  font-weight: normal; }
 
 .contact-hero-section input::placeholder,
 .contact-hero-section textarea::placeholder {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Raleway", sans-serif;
   padding: 5px 20px;
-  color: #0c2746; }
+  color: #0c2746;
+  font-weight: normal; }
 
 .contact-hero-section h3.gform_title {
   color: #0c2746;
@@ -699,13 +708,109 @@ footer .footer-right-menu li,
   color: #0c2746;
   min-width: 150px; }
 
+.section-welcome-mobile p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.1em; }
+
+.section-welcome-mobile h1 {
+  font-size: 2em;
+  letter-spacing: -.01em;
+  line-height: .85 !important; }
+
+.section-mobile-form .mobile-form .gform_heading h3 {
+  color: white !important;
+  text-align: center; }
+
+.section-mobile-form .mobile-form .gform_wrapper li.gfield {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  padding: 0px !important; }
+
+.section-mobile-form .mobile-form .top_label input.large,
+.section-mobile-form .mobile-form select {
+  background-color: #ebebeb;
+  height: 50px;
+  padding: 5px 20px !important;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif !important;
+  color: #0c2746;
+  font-weight: bolder; }
+
+.section-mobile-form .mobile-form select {
+  font-weight: normal; }
+
+.section-mobile-form .mobile-form .gform_wrapper textarea.large {
+  max-height: 120px;
+  background-color: #ebebeb;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  color: #0c2746;
+  font-weight: bolder; }
+
+.section-mobile-form .mobile-form input::-webkit-input-placeholder,
+.section-mobile-form .mobile-form textarea::-webkit-input-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+.section-mobile-form .mobile-form input::-moz-placeholder,
+.section-mobile-form .mobile-form textarea::-moz-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+.section-mobile-form .mobile-form input:-ms-input-placeholder,
+.section-mobile-form .mobile-form textarea:-ms-input-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+.section-mobile-form .mobile-form input::-ms-input-placeholder,
+.section-mobile-form .mobile-form textarea::-ms-input-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+.section-mobile-form .mobile-form input::placeholder,
+.section-mobile-form .mobile-form textarea::placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+.section-mobile-form .mobile-form input.button {
+  border: 3px solid #bf9d6e !important;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  background: transparent; }
+
+.section-mobile-form .mobile-form input.button:hover {
+  background: #bf9d6e; }
+
 .contact-faq-section {
+  max-width: 800px;
   margin: auto;
   padding: 5% 20%; }
 
 @media (max-width: 768px) {
   .contact-faq-section {
-    padding: 30px; } }
+    padding: 0px;
+    max-width: 100%; }
+  .contact-faq-section .col.has-bg {
+    padding: 0px; } }
 
 .contact-faq-section h2 {
   font-family: breakers-slab, sans-serif;
@@ -716,6 +821,10 @@ footer .footer-right-menu li,
   font-family: "Raleway", sans-serif;
   font-size: 1.1em;
   line-height: 1.5; }
+
+@media (max-width: 768px) {
+  .contact-faq-section .panel-group {
+    padding: 0px 30px; } }
 
 .contact-faq-section .panel-group .panel {
   padding: 10px;

@@ -23,12 +23,14 @@
 	}
 
 	.gform_wrapper textarea.large {
-		max-height: 150px;
+		max-height: 120px;
 		background-color: #ebebeb;
 		padding: 5px 20px;
 		border-radius: 5px;
 		font-size: 1.2em;
 		font-family: $font-body;
+		color: $brand-blue;
+		font-weight: bolder;
 	}
 
 	.gform_wrapper select {
@@ -42,18 +44,21 @@
 	.top_label input.large,
 	select {
 		background-color: #ebebeb;
-		height: 60px;
+		height: 50px;
 		padding: 5px 20px !important;
 		border-radius: 5px;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		font-family: $font-body !important;
+		color: $brand-blue;
+		font-weight: bolder;
 	}
 	input::placeholder,
 	textarea::placeholder {
-		font-size: 1.2em;
+		font-size: 1em;
 		font-family: $font-body;
 		padding: 5px 20px;
 		color: $brand-blue;
+		font-weight: normal;
 	}
 
 	h3.gform_title {
@@ -81,13 +86,88 @@
 
 	}
 }
+.section-welcome-mobile {
+	p {
+		font-family: $font-body;
+		font-weight: 300;
+		font-size: 1.1em;
+	}
+	h1 {
+		font-size: 2em;
+		letter-spacing: -.01em;
+		line-height: .85 !important;
+	}
+}
+.section-mobile-form {
+	.mobile-form {
+		.gform_heading h3 {
+			color: $brand-white !important;
+			text-align: center;
+		}
+		.gform_wrapper li.gfield {
+			margin-bottom: 0px !important;
+			margin-top: 0px !important;
+			padding: 0px !important;
+		}
+		.gform_wrapper .top_label > li .gfield_label {
+			//display: none;
+		}
+
+		.top_label input.large,
+		select {
+			background-color: #ebebeb;
+			height: 50px;
+			padding: 5px 20px !important;
+			border-radius: 5px;
+			font-size: 1em;
+			font-family: $font-body !important;
+			color: $brand-blue;
+			font-weight: bolder;
+		}
+		select {
+			font-weight: normal;
+		}
+		.gform_wrapper textarea.large {
+			max-height: 120px;
+			background-color: #ebebeb;
+			padding: 5px 20px;
+			border-radius: 5px;
+			font-size: 1.2em;
+			font-family: $font-body;
+			color: $brand-blue;
+			font-weight: bolder;
+		}
+		input::placeholder,
+		textarea::placeholder {
+			font-size: 1em;
+			font-family: $font-body;
+			padding: 5px 20px;
+			color: $brand-blue;
+			font-weight: normal;
+		}
+		input.button {
+			border: 3px solid $brand-gold !important;
+		    padding: 15px 35px;
+		    font-size: 1.2em;
+		    background: transparent;
+		}
+		input.button:hover {
+			background: $brand-gold;
+		}
+	}
+}
 .contact-faq-section {
-	//max-width: 800px;
+	max-width: 800px;
 	margin: auto;
 	padding: 5% 20%;
 
 	@media (max-width: 768px) {
-		padding: 30px;
+		padding: 0px;
+		max-width: 100%;
+
+		.col.has-bg {
+			padding: 0px;
+		}
 	}
 
 	h2 {
@@ -102,6 +182,11 @@
 		line-height: 1.5;
 	}
 
+	.panel-group {
+		@media (max-width: 768px) {
+			padding: 0px 30px;
+		}
+	}
 	.panel-group .panel {
 		padding: 10px;
 		-webkit-box-shadow: $box-shadow; 
