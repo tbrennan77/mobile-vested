@@ -68,6 +68,10 @@ p {
   font-weight: bold;
   font-family: "Raleway", sans-serif; }
 
+@media (max-width: 768px) {
+  .play-icon {
+    font-size: 1.2em; } }
+
 .play-icon img {
   margin-right: 10px; }
 
@@ -304,10 +308,18 @@ footer .footer-right-menu li,
   font-size: 2.5em;
   color: #0c2746; }
 
+@media (max-width: 768px) {
+  .home-strategies-section .left-column h2 {
+    text-align: center; } }
+
 .home-strategies-section .left-column p {
   color: #0c2746;
   font-family: "Raleway", sans-serif;
   font-size: 1.25em; }
+
+@media (max-width: 768px) {
+  .home-strategies-section .left-column p {
+    text-align: center; } }
 
 .home-strategies-section .left-column::before {
   content: '\a0';
@@ -376,12 +388,21 @@ footer .footer-right-menu li,
   color: #0c2746;
   text-transform: uppercase; }
 
+@media (max-width: 768px) {
+  .why-mobilevested .right-column h1,
+  .why-mobilevested .right-column h2 {
+    text-align: center; } }
+
 .why-mobilevested .right-column p {
   color: #0c2746;
   font-family: "Raleway", sans-serif;
   font-size: 1.25em;
   line-height: 1.15;
   margin: 40px 0; }
+
+@media (max-width: 768px) {
+  .why-mobilevested .right-column p {
+    text-align: center; } }
 
 .glenn-and-max h2 {
   color: white;

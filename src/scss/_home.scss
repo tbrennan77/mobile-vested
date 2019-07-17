@@ -20,12 +20,20 @@
 			font-style: normal;
 			font-size: 2.5em;
 			color: $brand-blue;
+
+			@media (max-width: 768px) {
+				text-align: center;
+			}
 	    }
 
 	    p {
 	    	color: $brand-blue;
 	    	font-family: $font-body;
 	    	font-size: 1.25em;
+
+	    	@media (max-width: 768px) {
+				text-align: center;
+			}
 	    }
 	}
 
@@ -113,6 +121,10 @@
 			font-size: 2.45em !important;
 			color: $brand-blue;
 			text-transform: uppercase;
+
+			@media (max-width: 768px) {
+				text-align: center;
+			}
 		}
 
 		p {
@@ -121,6 +133,10 @@
 	    	font-size: 1.25em;
 	    	line-height: 1.15;
 	    	margin: 40px 0;
+
+			@media (max-width: 768px) {
+				text-align: center;
+			}
 		}
 	}
 }

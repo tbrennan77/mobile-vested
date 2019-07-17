@@ -61,6 +61,10 @@ p {
 	font-weight: bold;
 	font-family: $font-body;
 
+	@media (max-width: 768px) {
+		font-size: 1.2em;
+	}
+
 	img {
 		margin-right: 10px;
 	}
