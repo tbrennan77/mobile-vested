@@ -48,7 +48,12 @@ p {
 }
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
 	line-height: 1;
+	font-family: $font-header;
+	font-style: normal;
+	font-weight: 800;
+	letter-spacing: -.01em;
 }
+
 .play-icon {
 	color: $brand-gold;
 	font-size: 1.5em;

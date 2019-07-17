@@ -2,22 +2,80 @@ footer,
 .site-footer {
 	background-color: $brand-gold;
 	
+	a {
+		color: $brand-white;
+		font-family: $font-menu;
+		font-size: 1.2em;
+	}
 	li,
 	p {
 		color: $brand-blue;
 	}
+	li {
+		padding: 5px 0;
+	}
 	.footer-stay-up {
-		text-align: left;
+		text-align: center;
+		padding-left: 0px;
 
 		li {
 			display: inline;
+
+			img {
+				height: auto;
+				max-width: 60px;
+
+				@media (max-width: 768px) {
+					max-width: 40px;
+				}
+			}
 		}
 		.li-i {
-			padding: 7px;
+			padding: 15px;
+
+			@media (max-width: 768px) {
+				padding: 5px;
+			}
 		}
 		.becausecoffee {
 			font-size: 1.2rem;
 			font-weight: bold;
+		}
+	}
+	.footer-left-menu {
+		text-align: center;
+		padding-left: 0px;
+		padding-top: 50px;
+
+		@media (max-width: 768px) {
+			padding-top: 5px;
+		}
+
+		strong {
+			color: $brand-white;
+			font-size: 2em;
+		}
+		li {
+			list-style-type: none;
+			text-align: center;
+		}
+	}
+	.footer-right-menu {
+		text-align: center;
+		padding-left: 0px;
+		padding-top: 50px;
+
+		@media (max-width: 768px) {
+			padding-top: 5px;
+		}
+
+		strong {
+			color: $brand-white;
+			font-size: 2em;
+		}
+		li {
+			list-style-type: none;
+			text-align: center;
 		}
 	}
 }

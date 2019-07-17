@@ -20,8 +20,8 @@
 	    left: 0px;
 	}
 
-	.login-link .menu-btn {
-		color: $brand-blue;
+	.header-nav .tb-primary-menu > li.login-link > .menu-btn::before {
+		background-color: $brand-blue;
 	}
 }
 
@@ -67,6 +67,10 @@
 		border-left: 3px solid $brand-blue;
 		text-align: center;
 	    margin: auto;
+	}
+
+	.header-nav .tb-primary-menu > li:not(.login-link) > .menu-btn::before {
+		background-color: $brand-blue;
 	}
 }
 
