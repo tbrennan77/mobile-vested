@@ -116,6 +116,8 @@
 	}
 }
 .meet-glenn {
+	min-height: 330px;
+
 	h2 {
 		color: $brand-lt-gold;
 	}
@@ -126,6 +128,12 @@
 	.play-icon {
 		position: relative;
 		top: 20px;
+	}
+	.profile img {
+		height: 350px;
+		position: absolute;
+		top: -20px;
+		max-width: inherit;
 	}
 }
 .meet-max {
@@ -140,5 +148,12 @@
 		position: relative;
 		top: 20px;
 		color: $brand-blue;
+	}
+	.profile img {
+		max-height: 340px;
+		//max-width: auto;
+	}
+	.gold {
+		color: $brand-white !important;
 	}
 }

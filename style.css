@@ -46,13 +46,16 @@ p {
   color: #bf9d6e; }
 
 .background-gradient {
-  background: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(8%, white), color-stop(8%, rgba(23, 60, 93, 0.95)), to(rgba(11, 35, 64, 0.95)));
-  background: linear-gradient(180deg, white 0%, white 8%, rgba(23, 60, 93, 0.95) 8%, rgba(11, 35, 64, 0.95) 100%); }
+  background: #173c5d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#173c5d), to(#0b2340));
+  background: linear-gradient(to bottom, #173c5d 0%, #0b2340 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#173c5d', endColorstr='#0b2340',GradientType=0 ); }
 
 .gold-gradient {
-  background: -webkit-gradient(linear, left bottom, left top, from(#bf9d6e), to(#fff4e7));
-  background: linear-gradient(0deg, #bf9d6e 0%, #fff4e7 100%); }
+  background: #c9ab82;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c9ab82), to(#b99466));
+  background: linear-gradient(to bottom, #c9ab82 0%, #b99466 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9ab82', endColorstr='#b99466',GradientType=0 ); }
 
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
   line-height: 1;
@@ -189,14 +192,15 @@ footer,
 footer a,
 .site-footer a {
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em; }
+  font-family: "Roboto", sans-serif; }
 
 footer li,
 footer p,
 .site-footer li,
 .site-footer p {
-  color: #0c2746; }
+  color: #0c2746;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em; }
 
 footer li,
 .site-footer li {
@@ -249,12 +253,24 @@ footer .footer-left-menu,
 footer .footer-left-menu strong,
 .site-footer .footer-left-menu strong {
   color: white;
-  font-size: 2em; }
+  font-size: 2em;
+  font-family: breakers-slab, sans-serif; }
+
+@media (max-width: 768px) {
+  footer .footer-left-menu strong,
+  .site-footer .footer-left-menu strong {
+    display: none; } }
 
 footer .footer-left-menu li,
 .site-footer .footer-left-menu li {
   list-style-type: none;
   text-align: center; }
+
+@media (max-width: 768px) {
+  footer .footer-left-menu li,
+  .site-footer .footer-left-menu li {
+    display: inline;
+    padding: 0 5px; } }
 
 footer .footer-right-menu,
 .site-footer .footer-right-menu {
@@ -270,7 +286,8 @@ footer .footer-right-menu,
 footer .footer-right-menu strong,
 .site-footer .footer-right-menu strong {
   color: white;
-  font-size: 2em; }
+  font-size: 2em;
+  font-family: breakers-slab, sans-serif; }
 
 footer .footer-right-menu li,
 .site-footer .footer-right-menu li {
@@ -331,6 +348,18 @@ footer .footer-right-menu li,
   width: 50vw;
   height: 100%;
   left: -50vw; }
+
+@media (max-width: 768px) {
+  .home-strategies-section .left-column::after {
+    content: '\a0';
+    /* \a0 is hex code for a non-breaking space */
+    z-index: -1;
+    background-color: #fff4e7;
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 100%;
+    right: -50vw; } }
 
 .home-strategies-section .right-column h1 {
   font-weight: 300;
@@ -420,6 +449,28 @@ footer .footer-right-menu li,
 .glenn-and-max p {
   font-family: "Raleway", sans-serif;
   color: white; }
+
+.glenn-and-max img {
+  height: 300px;
+  width: auto !important;
+  position: absolute;
+  top: -20px; }
+
+.glenn-and-max-mobile {
+  padding-top: 0px; }
+
+.glenn-and-max-mobile .glenn {
+  background-color: #0c2746 !important;
+  color: white; }
+
+.glenn-and-max-mobile .max {
+  background-color: #0c2746 !important;
+  color: white; }
+
+.glenn-and-max-mobile .blue {
+  display: inline;
+  color: #bf9d6e !important;
+  background-color: transparent !important; }
 
 .about-hero-section {
   background-color: #0c2746;
@@ -517,6 +568,9 @@ footer .footer-right-menu li,
   text-align: center;
   background-color: white; }
 
+.meet-glenn {
+  min-height: 330px; }
+
 .meet-glenn h2 {
   color: #fff4e7; }
 
@@ -527,6 +581,12 @@ footer .footer-right-menu li,
 .meet-glenn .play-icon {
   position: relative;
   top: 20px; }
+
+.meet-glenn .profile img {
+  height: 350px;
+  position: absolute;
+  top: -20px;
+  max-width: inherit; }
 
 .meet-max h2 {
   color: #0c2746; }
@@ -539,6 +599,12 @@ footer .footer-right-menu li,
   position: relative;
   top: 20px;
   color: #0c2746; }
+
+.meet-max .profile img {
+  max-height: 340px; }
+
+.meet-max .gold {
+  color: white !important; }
 
 .contact-hero-section p {
   font-family: "Raleway", sans-serif;

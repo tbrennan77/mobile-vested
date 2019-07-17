@@ -12,6 +12,7 @@
 }
 
 .home-strategies-section {
+
 	.left-column {
 		background-color: $brand-lt-gold;
 
@@ -48,8 +49,22 @@
 	    left: -50vw;
 	}
 
+	@media (max-width: 768px) {
+		.left-column::after {
+			content: '\a0'; /* \a0 is hex code for a non-breaking space */
+		    z-index: -1;
+		    background-color: $brand-lt-gold;
+		    position: absolute;
+		    top: 0;
+		    width: 50vw;
+		    height: 100%;
+		    right: -50vw;
+		}
+	}
+
 	.right-column {
 
+		
 		h1 {
 			font-weight: 300;
 			font-style: normal !important;
@@ -160,5 +175,31 @@
 	p {
 		font-family: $font-body;
 		color: $brand-white;
+	}
+
+	img {
+		height: 300px;
+		width: auto !important;
+		position: absolute;
+		top: -20px;
+	}
+}
+.glenn-and-max-mobile {
+	padding-top: 0px;
+
+	.glenn {
+		background-color: $brand-blue !important;
+		color: $brand-white;
+	}
+
+	.max {
+		background-color: $brand-blue !important;
+		color: $brand-white;
+	}
+
+	.blue {
+		display: inline;
+		color: $brand-gold !important;
+		background-color: transparent !important;
 	}
 }

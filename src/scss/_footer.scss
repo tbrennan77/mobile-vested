@@ -5,11 +5,12 @@ footer,
 	a {
 		color: $brand-white;
 		font-family: $font-menu;
-		font-size: 1.2em;
 	}
 	li,
 	p {
 		color: $brand-blue;
+		font-family: $font-menu;
+		font-size: 1.2em;
 	}
 	li {
 		padding: 5px 0;
@@ -54,10 +55,20 @@ footer,
 		strong {
 			color: $brand-white;
 			font-size: 2em;
+			font-family: $font-header;
+
+			@media (max-width: 768px) {
+				display: none;
+			}
 		}
 		li {
 			list-style-type: none;
 			text-align: center;
+
+			@media (max-width: 768px) {
+				display: inline;
+				padding: 0 5px;
+			}
 		}
 	}
 	.footer-right-menu {
@@ -72,6 +83,7 @@ footer,
 		strong {
 			color: $brand-white;
 			font-size: 2em;
+			font-family: $font-header;
 		}
 		li {
 			list-style-type: none;
