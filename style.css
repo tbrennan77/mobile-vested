@@ -33,7 +33,9 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1; }
+  line-height: 1;
+  font-family: breakers-slab, sans-serif;
+  font-weight: 300; }
 
 a:hover {
   color: #fff4e7; }
@@ -298,7 +300,9 @@ footer .footer-right-menu li,
   border: 3px solid #bf9d6e !important;
   padding: 15px 35px;
   font-size: 1.2em;
-  background: transparent; }
+  background: transparent;
+  font-family: breakers-slab, sans-serif;
+  font-weight: 300; }
 
 .btn:hover {
   background: #bf9d6e; }
