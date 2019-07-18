@@ -179,9 +179,10 @@
 
 	img {
 		height: 300px;
-		width: auto !important;
+		max-width: inherit;
 		position: absolute;
 		top: -20px;
+		left: -30px;
 	}
 }
 .glenn-and-max-mobile {

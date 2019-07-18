@@ -452,9 +452,10 @@ footer .footer-right-menu li,
 
 .glenn-and-max img {
   height: 300px;
-  width: auto !important;
+  max-width: inherit;
   position: absolute;
-  top: -20px; }
+  top: -20px;
+  left: -30px; }
 
 .glenn-and-max-mobile {
   padding-top: 0px; }
@@ -524,7 +525,7 @@ footer .footer-right-menu li,
 .about-hero-section .left-column img {
   width: 85%;
   position: absolute;
-  top: -100px; }
+  top: -130px; }
 
 .about-mailinglist-section h2,
 .about-mailinglist-section .tb-headline h2 {
