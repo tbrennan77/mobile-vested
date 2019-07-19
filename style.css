@@ -705,7 +705,7 @@ footer .footer-right-menu li,
   background: rgba(255, 255, 255, 0.9) !important;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0px 3px 11px 3px rgba(0, 0, 0, 0.51); }
+  box-shadow: 0px 3px 11px 3px rgba(204, 204, 204, 0.51); }
 
 .contact-hero-section .gform_button {
   border: 3px solid #bf9d6e;
@@ -833,7 +833,7 @@ footer .footer-right-menu li,
 
 .contact-faq-section .panel-group .panel {
   padding: 10px;
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0px 3px 11px 3px rgba(204, 204, 204, 0.51);
   margin-bottom: 40px;
   border-radius: 5px; }
 
@@ -850,3 +850,323 @@ footer .footer-right-menu li,
 
 .contact-faq-section .panel p {
   color: #bf9d6e; }
+
+.tml-action-login .site-inner {
+  background-color: white; }
+
+.tml-action-login h1.entry-title,
+.tml-action-lostpassword h1.entry-title,
+.tml-action-register h1.entry-title,
+.tml-action-profile h1.entry-title {
+  font-family: breakers-slab, sans-serif;
+  letter-spacing: -.03em;
+  font-size: 2em;
+  text-transform: uppercase; }
+
+.tml-action-login header.entry-header,
+.tml-action-lostpassword header.entry-header,
+.tml-action-register header.entry-header,
+.tml-action-profile header.entry-header {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.tml-action-login article.page,
+.tml-action-lostpassword article.page,
+.tml-action-register article.page,
+.tml-action-profile article.page {
+  background-color: transparent; }
+
+.tml-action-login article a,
+.tml-action-lostpassword article a,
+.tml-action-register article a,
+.tml-action-profile article a {
+  border-bottom: 1px solid #0c2746; }
+
+.tml-action-login article a:hover,
+.tml-action-lostpassword article a:hover,
+.tml-action-register article a:hover,
+.tml-action-profile article a:hover {
+  color: #0c2746; }
+
+.tml-register,
+.tml-lostpassword,
+.tml-profile {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.tml-login {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.tml-login .tml-social-providers-divider span {
+  color: #0c2746;
+  font-weight: bold;
+  line-height: 1.8; }
+
+.tml-login .tml-social-provider .tml-social-provider-text {
+  font-weight: bold; }
+
+.tml-login .tml-social-providers a.tml-social-provider:link {
+  box-shadow: 0px 3px 11px 3px rgba(204, 204, 204, 0.51); }
+
+.tml-profile h3 {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #bf9d6e; }
+
+.tml-profile h3 .tml-name_section_header-wrap {
+  margin-top: 30px; }
+
+.tml-button {
+  font-header: "Raleway", sans-serif !important;
+  text-transform: capitalize !important;
+  color: white !important;
+  font-size: 1em !important;
+  letter-spacing: -.01em !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24) !important;
+  background-color: #0c2746 !important; }
+
+@media (max-width: 992px) {
+  .tml-button {
+    max-width: none;
+    width: 100%; } }
+
+.tml-button:hover {
+  background-color: #0c2746;
+  color: white; }
+
+.tml-links {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+  /*
+    		.tml-register-link a:before {
+    			font-weight: 900; 
+    			content: "\f234";
+    			font-family: "Font Awesome 5 Brands", FontAwesome;
+    			margin-right: 5px;
+    		}
+    		.tml-lostpassword-link a:before {
+    			font-weight: 900; 
+    			content: "\f023";
+    			font-family: "Font Awesome 5 Brands", FontAwesome;
+    			margin-right: 5px;
+    		}
+    		.tml-login-link a:before {
+    			font-weight: 900; 
+    			content: "\f007";
+    			font-family: "Font Awesome 5 Brands", FontAwesome;
+    			margin-right: 5px;
+    		}
+    		*/ }
+
+.tml-links li {
+  display: inline-block;
+  margin-right: 20px; }
+
+.tml-social-providers {
+  max-width: 600px; }
+
+.tml-social-providers a.tml-social-provider-google:link {
+  background-color: #DB4437;
+  color: #fff; }
+
+.tml-label {
+  color: #0c2746;
+  text-transform: uppercase; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  background-color: #ebebeb;
+  height: 50px;
+  padding: 5px 20px !important;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif !important;
+  color: #0c2746;
+  font-weight: bolder; }
+
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+input[type="text"]::-moz-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+input[type="text"]:-ms-input-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+input[type="text"]::-ms-input-placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+input[type="text"]::placeholder {
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  color: #0c2746;
+  font-weight: normal; }
+
+.woocommerce-MyAccount-navigation {
+  margin-bottom: 30px; }
+
+.woocommerce-MyAccount-navigation ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: inline;
+  list-style-type: none;
+  margin-bottom: 10px; }
+
+.woocommerce-MyAccount-navigation ul li {
+  display: inline-block;
+  min-height: 40px; }
+
+.woocommerce-MyAccount-navigation ul li a {
+  border: 2px solid #bf9d6e;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px; }
+
+.woocommerce-MyAccount-navigation ul li a:hover {
+  border: 2px solid #bf9d6e !important; }
+
+.woocommerce-MyAccount-content .woocommerce-orders-table__cell .woocommerce-button {
+  width: auto !important;
+  padding: 5px 10px !important;
+  margin-right: 10px; }
+
+.woocommerce-account .woocommerce-order-details__title,
+.woocommerce-account .woocommerce-customer-details h2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #bf9d6e; }
+
+.woocommerce-account .woocommerce-customer-details {
+  margin-top: 50px; }
+
+.woocommerce-account .woocommerce-order-details tfoot th {
+  border-top: 1px solid #f2f2f2; }
+
+.woocommerce-account h2 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  color: #bf9d6e; }
+
+.woocommerce-messages .btn {
+  font-header: "Raleway", sans-serif !important;
+  text-transform: capitalize !important;
+  color: white !important;
+  font-size: 1em !important;
+  letter-spacing: -.01em !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24) !important;
+  background-color: #0c2746 !important; }
+
+article.course {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 10px;
+  box-shadow: 0px 3px 11px 3px rgba(204, 204, 204, 0.51);
+  min-height: 250px;
+  padding-top: 10px; }
+
+@media (max-width: 768px) {
+  article.course {
+    min-height: 300px; } }
+
+article.course .entry-title {
+  color: #0c2746;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+@media (max-width: 768px) {
+  article.course .entry-title {
+    padding: 0 20px;
+    font-size: 24px; } }
+
+article.course .entry-content {
+  color: #bf9d6e;
+  margin-bottom: 10px;
+  padding-right: 20px; }
+
+@media (max-width: 768px) {
+  article.course .entry-content {
+    padding: 0 20px;
+    line-height: 1.2;
+    font-size: 14px;
+    padding-right: 10px; } }
+
+article.course a:first-of-type {
+  float: left;
+  margin: 10px;
+  display: inline;
+  max-width: 95%; }
+
+@media (max-width: 768px) {
+  article.course a:first-of-type {
+    margin-bottom: 20px; } }
+
+article.course .caption {
+  float: right;
+  text-align: left;
+  display: inline;
+  max-width: 58%;
+  padding-top: 20px; }
+
+@media (max-width: 768px) {
+  article.course .caption {
+    float: inherit;
+    max-width: 90%; } }
+
+article.course .ribbon-enrolled {
+  position: absolute;
+  right: 55px;
+  top: 8px;
+  color: white;
+  width: 20px; }
+
+article.course .ribbon-enrolled::before {
+  content: url("images/CourseComplete_Icon.png");
+  width: 20px; }
+
+article.course .btn {
+  border: 0px solid #fff !important;
+  padding: 0px !important;
+  color: #0c2746;
+  margin: 0px !important;
+  border-bottom: 1px solid #bf9d6e !important;
+  font-size: .9em;
+  padding-top: 10px; }
+
+article.course .btn:hover {
+  background: transparent !important;
+  border-bottom: 1px solid #0c2746 !important;
+  color: #bf9d6e; }
+
+@media (max-width: 768px) {
+  article.course .ld_course_grid_button {
+    padding: 0 20px;
+    padding-bottom: 20px; } }
+
+article.course .ld_course_grid_price {
+  display: none; }
