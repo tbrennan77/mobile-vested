@@ -1,0 +1,225 @@
+.tml-action-login {
+	.site-inner {
+		background-color: $brand-white;
+	}
+}
+//.tml {
+
+	.tml-action-login, 
+	.tml-action-lostpassword,
+	.tml-action-register, 
+	.tml-action-profile {
+		h1.entry-title {
+			font-family: $font-header;
+			letter-spacing: -.03em;
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+		header.entry-header {
+			max-width: 600px;
+    		margin: 0 auto;
+		}
+		article.page {
+			background-color: transparent;
+		}
+		article a {
+			border-bottom: 1px solid $brand-blue;
+		}
+		article a:hover {
+			color: $brand-blue;
+		}
+	}
+	.tml-register, 
+	.tml-lostpassword, 
+	.tml-profile {
+		max-width: 600px;
+	    margin: 0 auto;
+	}
+	.tml-login {
+	    max-width: 600px;
+	    margin: 0 auto;
+
+	    .tml-social-providers-divider span {
+	    	color: $brand-blue;
+	    	font-weight: bold;
+	    	line-height: 1.8;
+	    }
+
+	    .tml-social-provider .tml-social-provider-text {
+	    	font-weight: bold;
+	    }
+
+	    .tml-social-providers a.tml-social-provider:link {
+	    	box-shadow: $box-shadow;
+	    }
+
+	}
+	.tml-profile {
+		h3 {
+			font-weight: bold;
+			font-family: $font-menu;
+			color: $brand-gold;
+
+			.tml-name_section_header-wrap {
+				margin-top: 30px;
+			}
+		}
+	}
+	.tml-button {
+			font-header: $font-body !important;
+		    text-transform: capitalize !important;
+		    color: $brand-white !important;
+		    font-size: 1em !important;
+		    letter-spacing: -.01em !important;
+		    font-weight: 700 !important;
+		    text-transform: none !important;
+		    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24) !important;
+		    background-color: $brand-blue !important;
+
+		    @media (max-width: 992px) {
+		        max-width: none;
+		        width: 100%;
+		    }
+		}
+		.tml-button:hover {
+			background-color: $brand-blue;
+			color: $brand-white;
+		}
+		.tml-links {
+			margin-left: 0;
+    		padding-left: 0;
+    		list-style-type: none;
+
+    		li {
+    			display: inline-block;
+    			margin-right: 20px;
+    		}
+    		/*
+    		.tml-register-link a:before {
+    			font-weight: 900; 
+    			content: "\f234";
+    			font-family: "Font Awesome 5 Brands", FontAwesome;
+    			margin-right: 5px;
+    		}
+    		.tml-lostpassword-link a:before {
+    			font-weight: 900; 
+    			content: "\f023";
+    			font-family: "Font Awesome 5 Brands", FontAwesome;
+    			margin-right: 5px;
+    		}
+    		.tml-login-link a:before {
+    			font-weight: 900; 
+    			content: "\f007";
+    			font-family: "Font Awesome 5 Brands", FontAwesome;
+    			margin-right: 5px;
+    		}
+    		*/
+	}
+
+	.tml-social-providers {
+		max-width: 600px;
+	}
+	.tml-social-providers a.tml-social-provider-google:link {
+		background-color: #DB4437;
+		color: #fff;
+	}
+	.tml-label {
+		color: $brand-blue;
+		text-transform: uppercase;
+	}
+	input[type="text"],
+	input[type="password"],
+	input[type="email"], 
+	select {
+		background-color: #ebebeb;
+		height: 50px;
+		padding: 5px 20px !important;
+		border-radius: 5px;
+		font-size: 1.2em;
+		font-family: $font-body !important;
+		color: $brand-blue;
+		font-weight: bolder;
+	}
+	input[type="text"]::placeholder {
+		font-size: 1em;
+		font-family: $font-body;
+		padding: 5px 20px;
+		color: $brand-blue;
+		font-weight: normal;
+	}
+.woocommerce-MyAccount-navigation {
+	margin-bottom: 30px;
+
+	ul {
+		margin-left: 0;
+	    padding-left: 0;
+	    display: inline;
+	    list-style-type: none;
+	    margin-bottom: 10px;
+
+	    li {
+	    	display: inline-block;
+	    	min-height: 40px;
+
+	    	a {
+	    		border: 2px solid $brand-gold;
+				padding: 5px 10px;
+				border-radius: 5px;
+				font-family: $font-menu;
+			    font-weight: bold;
+			    font-size: 14px;
+	    	}
+
+	    	a:hover {
+	    		border: 2px solid $brand-gold !important;
+	    	}
+	    }
+	}
+}
+.woocommerce-MyAccount-content {
+	.woocommerce-orders-table__cell {
+		.woocommerce-button {
+			width: auto !important;
+			padding: 5px 10px !important;
+			margin-right: 10px;
+		}
+	}
+}
+.woocommerce-account {
+	.woocommerce-order-details__title, 
+	.woocommerce-customer-details h2  {
+		font-size: 2rem;
+    	line-height: 2.25rem;
+    	color: $brand-gold;
+	}
+
+	.woocommerce-customer-details {
+		margin-top: 50px;
+	}
+
+	.woocommerce-order-details {
+		tfoot th {
+			border-top: 1px solid #f2f2f2; 
+		}
+	}
+	h2 {
+		font-size: 3rem;
+    	line-height: 3.25rem;
+    	color: $brand-gold;
+	}
+}
+//}
+
+.woocommerce-messages {
+	.btn {
+		font-header: $font-body !important;
+		text-transform: capitalize !important;
+		color: $brand-white !important;
+		font-size: 1em !important;
+		letter-spacing: -.01em !important;
+		font-weight: 700 !important;
+		text-transform: none !important;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24) !important;
+		background-color: $brand-blue !important;
+	}
+}
