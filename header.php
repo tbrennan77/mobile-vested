@@ -27,6 +27,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<?php themeblvd_get_template_part( 'head' ); ?>
 	<link rel="stylesheet" href="https://use.typekit.net/iph6fdo.css">
+	<script src="https://kit.fontawesome.com/2e82a3616f.js"></script>
 </head>
 <body <?php body_class(); ?>>
 
