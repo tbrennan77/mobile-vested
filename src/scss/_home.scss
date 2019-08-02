@@ -78,6 +78,10 @@
 	    	font-size: 1.25em;
 	    	margin: 40px 0;
 		}
+
+		@media (max-width: 768px) { 
+			text-align: center;
+		}
 	}
 }
 
