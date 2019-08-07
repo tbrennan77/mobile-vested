@@ -1,0 +1,39 @@
+.woocommerce-MyAccount-navigation ul li a:hover,
+.woocommerce-MyAccount-content a:hover, 
+.woocommerce-order-details a:hover {
+	color: $brand-blue;
+}
+.woocommerce-Button,
+.woocommerce-button,
+.single_add_to_cart_button,
+.woocommerce .button {
+	border: 3px solid $brand-gold !important;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background: $brand-blue;
+    font-family: $font-header;
+	font-weight: 300;
+	margin-top: 20px;
+}
+.single_add_to_cart_button {
+	padding: 10px 20px !important;
+	height: 45px !important;
+}
+.woocommerce .button {
+	margin-top: 0px;
+}
+#place_order {
+	margin-top: 30px;
+}
+.order-again {
+	margin: 20px 0 !important;
+}
+.woocommerce-privacy-policy-text {
+	margin: 20px 0;
+}
+.woocommerce-Button:hover,
+.woocommerce-button:hover,
+.single_add_to_cart_button:hover,
+.woocommerce .button:hover {
+	background: $brand-gold;
+}
